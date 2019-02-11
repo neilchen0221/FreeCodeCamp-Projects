@@ -1,0 +1,61 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+#main {
+  width: 80%;
+  margin: auto;
+}
+
+@media screen and (max-width: 768px) {
+  #main {
+    width: 100%;
+  }
+}
+
+.heading {
+  text-align: center;
+}
+
+.heading #title {
+  margin-bottom: 0;
+}
+
+.heading .subtitle {
+  margin-top: 10px;
+  font-weight: 400;
+  padding-bottom: 5px;
+  border-bottom: 2px solid #d6d6d6;
+}
+
+#image {
+  width: 100%;
+  margin: auto;
+  max-width: 757px;
+  display: block;
+}
+
+#img-caption {
+  font-style: italic;
+  font-size: 15px;
+  text-align: center;
+  margin-top: 5px;
+}
+
+#tribute-info {
+  margin: auto;
+  width: 80%;
+}
+
+@media screen and (max-width: 480px) {
+  #tribute-info {
+    width: 100%;
+  }
+}
+
+#footer {
+  text-align: center;
+  margin: 30px 0 30px;
+  font-weight: bold;
+}
+/*# sourceMappingURL=main.css.map */
