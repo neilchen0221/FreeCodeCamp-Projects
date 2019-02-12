@@ -1,0 +1,46 @@
+body {
+  background-color: #a9d7d1;
+}
+
+#title {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.form-outer {
+  width: 60%;
+  margin: auto;
+  background-color: #fdfdfd;
+  padding: 15px;
+  border: 2px solid lightgrey;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  @media screen and (max-width: 768px) {
+    width: 90%;
+  }
+}
+
+#description {
+  text-align: center;
+  font-size: 20px;
+}
+
+.required-field {
+  color: red;
+}
+
+.form-label {
+  display: inline-block;
+  text-align: right;
+  @media screen and (max-width: 576px) {
+    text-align: left;
+  }
+}
+
+.form-selection-group {
+  list-style: none;
+  padding: 0;
+  input {
+    margin-right: 10px;
+  }
+}
