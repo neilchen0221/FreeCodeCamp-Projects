@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Product Landing Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.2.1/css/bootstrap.min.css"
+    />
+    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.1/css/all.css"
+      integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
+  </head>
+  <body>
+    <header id="header">
+      <nav id="nav-bar" class="navbar navbar-expand-sm plp-nav__style">
+        <a class="navbar-brand" href="#Home"
+          ><img id="header-img" src="image/gjc-logo.png" alt="gloria_jeans_icon" width="100px"
+        /></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-expanded="false">
+          <span class="fa fa-bars plp-nav__toggler"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbar">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link plp-nav__link" href="#Home"><span>Home</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link plp-nav__link" href="#Product"><span>Product</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link plp-nav__link" href="#About-Us"><span>About Us</span></a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main class="plp-main">
+      <section id="Home" class="plp-wrapper">
+        <form id="form" action="https://www.freecodecamp.com/email-submit">
+          <h4>Subscribe with us today and get latest menu and news!</h4>
+          <input
+            class="form-control"
+            id="email"
+            type="email"
+            name="email"
+            placeholder="Enter your email address"
+            required
+          />
+          <input class="plp-btn" id="submit" type="submit" value="Subscribe" />
+        </form>
+      </section>
+
+      <section class="plp-video">
+        <iframe id="video" height="315" src="https://www.youtube.com/embed/8kYrNDTbutY" frameborder="0"></iframe>
+      </section>
+
+      <section class="plp-wrapper" id="Product">
+        <h1>Our Products</h1>
+        <div class="plp-product__wrapper">
+          <div class="plp-product__item">
+            <img src="/image/Cappuccino-RGB.png" alt="Cappuccino" />
+            <div class="plp-product__label">Cappuccino</div>
+          </div>
+          <div class="plp-product__item">
+            <img src="/image/Caffe-Latte-RGB.png" alt="Latte" />
+            <div class="plp-product__label">Latte</div>
+          </div>
+          <div class="plp-product__item">
+            <img src="/image/Flat-White-RGB.png" alt="Flat-White" />
+            <div class="plp-product__label">Flat White</div>
+          </div>
+        </div>
+      </section>
+
+      <section id="About-Us" class="plp-wrapper">
+        <h1>About Us</h1>
+        <p>
+          Gloria Jean’s Coffees is one of Australia’s favourite places to relax or reinvigorate. Coffee and people are
+          our passion and we’re committed to making our local coffee houses a community success story. With over three
+          hundred stores around Australia in convenient locations, it’s easy to find one near you.
+        </p>
+        <p>
+          Australians of all ages love quality, speciality gourmet coffee. It’s part of our morning ritual – dropping
+          into our local coffee house. We don’t officially wake up until there’s one in our hand! So enjoy our coffee
+          for which we are famous, try some of icy signature chillers, or grab a bite to eat from our menu – we even let
+          you choose your own coffee blend! There’s something for everyone at your local Gloria Jean’s Coffees.
+        </p>
+      </section>
+    </main>
+
+    <footer class="plp-footer">
+      <p>Join the conversation on Facebook or Instagram.</p>
+      <div class="plp-social">
+        <a href="https://www.facebook.com/gloriajeanscoffeesAUS/" target="_blank">
+          <img src="/image/fbIcon.png" alt="fbIcon" />
+        </a>
+        <a href="https://www.instagram.com/gloriajeanscoffees/" target="_blank">
+          <img src="/image/igIcon.png" alt="igIcon" />
+        </a>
+      </div>
+    </footer>
+
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.0/js/bootstrap.min.js"
+      integrity="sha384-7aThvCh9TypR7fIc2HV4O/nFMVCBwyIUKL8XCtKE+8xgCgl/PQGuFsvShjr74PBp"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  </body>
+</html>

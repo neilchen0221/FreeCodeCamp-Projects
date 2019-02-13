@@ -1,0 +1,144 @@
+$color-primary: #2d2929;
+$color-font: #dad5cf;
+$color-font-light: lighten($color-font, 50%);
+body {
+  background-image: url(../image/gjc-bodyBkg.jpg);
+  font-family: 'Oswald', sans-serif;
+}
+#header {
+  background-color: $color-primary;
+  position: sticky;
+  top: 0;
+  width: 100%;
+}
+
+.plp-nav__style {
+  max-width: 1080px;
+  margin: auto;
+  padding-left: 30px;
+}
+
+.plp-nav__link {
+  color: $color-font;
+  font-family: 'Oswald', sans-serif;
+  font-size: 20px;
+  margin-right: 0.5rem;
+  text-align: center;
+
+  @media screen and (min-width: 576px) {
+    &:after {
+      content: '|';
+      margin-left: 1.5rem;
+      color: $color-font;
+    }
+  }
+  span {
+    transition: color 0.2s linear;
+  }
+  &:hover {
+    span {
+      color: $color-font-light;
+      border-bottom: 2px solid $color-font-light;
+    }
+  }
+}
+
+.nav-item {
+  &:last-child {
+    .plp-nav__link::after {
+      content: '';
+    }
+  }
+}
+
+.plp-nav__toggler {
+  color: $color-font;
+  font-size: 30px;
+}
+
+.plp-main {
+  max-width: 960px;
+  width: 80%;
+  margin: auto;
+  @media screen and (max-width: 768px) {
+    width: 90%;
+  }
+}
+
+.plp-video {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  #video {
+    max-width: 560px;
+    width: 100%;
+  }
+}
+
+#email {
+  max-width: 300px;
+  margin: 20px auto 20px;
+}
+#submit {
+  cursor: pointer;
+  font-family: 'Oswald', sans-serif;
+  font-weight: bold;
+  border: none;
+  padding: 5px 20px 5px;
+  background-color: $color-primary;
+  color: $color-font;
+  transition: all 0.2s ease-in-out;
+  border-radius: 10px;
+  &:hover {
+    color: $color-font-light;
+    font-size: 20px;
+  }
+}
+.plp-wrapper {
+  text-align: center;
+  margin: 50px auto 50px;
+}
+.plp-product__wrapper {
+  margin: 20px auto 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  max-width: 760px;
+}
+
+.plp-product__item {
+  &:hover {
+    img {
+      transform: scale(1.1);
+      transition: all 0.2s ease-in-out;
+    }
+  }
+}
+
+.plp-product__label {
+  margin: 10px 60px 10px;
+  padding: 5px 0 5px;
+  border: 2px solid black;
+  border-radius: 15px;
+  font-family: 'Oswald', sans-serif;
+  color: $color-font;
+  background-color: $color-primary;
+}
+
+.plp-footer {
+  background-color: $color-primary;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-align: center;
+  p {
+    color: $color-font;
+  }
+  .plp-social {
+    img {
+      &:hover {
+        transform: scale(1.2);
+        transition: all 0.2s ease-in-out;
+      }
+    }
+  }
+}
