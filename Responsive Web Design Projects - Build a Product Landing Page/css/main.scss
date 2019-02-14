@@ -91,7 +91,7 @@ body {
   border-radius: 10px;
   &:hover {
     color: $color-font-light;
-    font-size: 20px;
+    transform: scale(1.2);
   }
 }
 .plp-wrapper {

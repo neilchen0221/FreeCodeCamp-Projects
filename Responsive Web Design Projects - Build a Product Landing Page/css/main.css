@@ -99,7 +99,8 @@ body {
 
 #submit:hover {
   color: white;
-  font-size: 20px;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
 
 .plp-wrapper {
