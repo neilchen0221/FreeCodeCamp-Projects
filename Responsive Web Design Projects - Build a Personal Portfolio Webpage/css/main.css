@@ -1,0 +1,178 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#navbar {
+  background-color: #26282c;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+#navbar button {
+  color: white;
+}
+
+#navbar .nav-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#navbar .nav-link {
+  display: inline-block;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  -webkit-transition: all 0.1s ease;
+  transition: all 0.1s ease;
+  font-size: 20px;
+  text-align: center;
+  margin: auto;
+}
+
+#navbar .nav-link:hover {
+  color: lightblue;
+}
+
+#navbar .nav-link:hover span {
+  border-bottom: 2px solid lightblue;
+}
+
+@media screen and (min-width: 576px) {
+  #navbar .nav-link {
+    margin-left: 30px;
+    margin-right: 25px;
+  }
+  #navbar .nav-item:last-child:after {
+    content: '';
+  }
+  #navbar .nav-item:after {
+    content: '|';
+    color: white;
+    font-size: 24px;
+    font-weight: 500;
+  }
+}
+
+#welcome-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: url("https://portfolio-website-0221.firebaseapp.com/assets/css/images/Website-Design-Background.png");
+  background-attachment: fixed;
+  height: 100vh;
+}
+
+#welcome-section .hero {
+  color: white;
+  max-width: 500px;
+  text-align: center;
+}
+
+#projects {
+  width: 80%;
+  margin: 20px auto;
+  text-align: center;
+}
+
+#projects h2 {
+  margin: 30px auto;
+  color: darkcyan;
+}
+
+#projects .project-tile {
+  text-decoration: none;
+  display: block;
+  margin: 30px auto;
+  width: 230px;
+  min-height: 240px;
+  border: 3px solid lightblue;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+#projects .project-tile:hover {
+  -webkit-box-shadow: 7px 11px 29px 3px lightblue;
+          box-shadow: 7px 11px 29px 3px lightblue;
+}
+
+#projects .project-tile .project-img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  height: 180px;
+  border-bottom: 3px solid lightblue;
+  overflow: hidden;
+}
+
+#projects .project-tile .project-img img {
+  width: 70%;
+}
+
+#projects .project-tile .project-label {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  color: darkcyan;
+  padding: 10px;
+}
+
+footer {
+  background-color: darkslategray;
+  padding: 30px;
+}
+
+footer .footer-header {
+  max-width: 350px;
+  margin: auto;
+  color: white;
+  text-align: center;
+}
+
+footer .contact-list {
+  max-width: 600px;
+  margin: 30px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+footer .contact-list .profile-link {
+  margin: 0 10px;
+  font-size: 60px;
+  color: white;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+footer .contact-list .profile-link:hover {
+  color: lightblue;
+}
+
+footer .copyright {
+  max-width: 300px;
+  margin: auto;
+  color: white;
+}
+/*# sourceMappingURL=main.css.map */
