@@ -17,7 +17,7 @@ body {
   margin-bottom: 30px;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1080px) {
   .form-outer {
     width: 90%;
   }
@@ -33,7 +33,7 @@ body {
 }
 
 .form-label {
-  display: inline-block;
+  vertical-align: middle;
   text-align: right;
 }
 
@@ -48,7 +48,52 @@ body {
   padding: 0;
 }
 
-.form-selection-group input {
-  margin-right: 10px;
+.form-selection-group li {
+  position: relative;
+  margin-left: 15px;
+}
+
+.form-selection-group input[name='how-do-you-hear'] {
+  position: absolute;
+  top: 5px;
+  cursor: pointer;
+  visibility: hidden;
+}
+
+.form-selection-group input[name='how-do-you-hear'] + label {
+  padding-left: 25px;
+  cursor: pointer;
+  background-image: url("https://img.icons8.com/material-outlined/24/000000/unchecked-radio-button.png");
+  background-size: 20px;
+  background-repeat: no-repeat;
+  background-position: 0px 3px;
+}
+
+.form-selection-group input[name='how-do-you-hear']:checked + label {
+  background-image: url("https://img.icons8.com/material/24/000000/unchecked-radio-button.png");
+}
+
+.form-selection-group input[name='tech-stack-interest'] {
+  position: absolute;
+  top: 5px;
+  cursor: pointer;
+  visibility: hidden;
+}
+
+.form-selection-group input[name='tech-stack-interest'] + label {
+  padding-left: 25px;
+  cursor: pointer;
+  background-image: url("https://img.icons8.com/material-outlined/50/000000/unchecked-checkbox.png");
+  background-size: 20px;
+  background-repeat: no-repeat;
+  background-position: 0px 3px;
+}
+
+.form-selection-group input[name='tech-stack-interest']:checked + label {
+  background-image: url("https://img.icons8.com/material-outlined/50/000000/checked-checkbox.png");
+}
+
+.validation-error {
+  color: red;
 }
 /*# sourceMappingURL=main.css.map */
